@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App 
+{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #3B3355;
+  /* background-color:#FFB800; */
+}
+.title 
+{
+  font-size: 3rem;
+  margin: 20px auto;
+  color:#FEFCFD ;
+}
+.UnderLine
+{
+  width: 200px;
+  height: 5px;
+  background-color: #BFCDE0;
+  margin:0px auto 20px;
+  transform: translateY(-10px);
+}
+.Card 
+{
+  width: 600px;
+  height: 400px;
+  background-color:#BFCDE0 ;
+  margin: auto;
+  position: relative;
+  color: #3B3355;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+.image
+{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: absolute;
+  top: -70px;
+  left: 20px;
+  border: 5px solid rgb(0, 0, 0);
+}
+.name 
+{
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: black;
+}
+.role 
+{
+  font-size: 1.1rem;
+}
+.quoteSymbol
+{
+  font-size: 1.6rem;
+  color: black;
+}
+.quote 
+{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.chevron
+{
+  
+  font-size: 1.6rem;
+  margin:0px 10px;
+  width: 60px;
+  display: flex;
+  font-weight: 600;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.supriseMe  button
+{
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
 }

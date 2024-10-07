@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import {indianCricketTeam} from './data.js'
+import Card from './components/Card.jsx';
 function App() {
+  // console.log(indianCricketTeam);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='title'>Cricket Players Info</h1>
+      <div className='UnderLine'></div>
+      <Card info={indianCricketTeam}></Card>
     </div>
   );
 }
-
 export default App;
